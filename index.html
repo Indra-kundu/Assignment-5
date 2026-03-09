@@ -72,6 +72,27 @@
                     </div>
     </section>
 
+    <script>
+        const loginBtn = document.getElementById("login-btn");
+        const usernameInput = document.getElementById("username");
+        const passwordInput = document.getElementById("password");
+        const errorMsg = document.getElementById("error-msg");
+
+        loginBtn.addEventListener("click", function (a) {
+            a.preventDefault(); // link click default prevent kore
+
+            const username = usernameInput.value.trim();
+            const password = passwordInput.value.trim();
+
+            if (username === "admin" && password === "admin123") {
+
+                window.location.href = "second-page.html";
+            } else {
+                // invalid login
+                errorMsg.classList.remove("hidden");
+            }
+        });
+    </script>
 
 </body>
 
