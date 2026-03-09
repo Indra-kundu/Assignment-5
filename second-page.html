@@ -19,9 +19,61 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        #post-container {
+            max-width: 1160px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .post-card {
+            border: 1px solid #E4E4E7;
+            box-shadow: 1px #64748B;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            height: 100%;
+        }
+
+        .card-top {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+
+
+
+        .labels {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+
 </head>
 
 <body>
+
+    <nav class="bg-[#ffffff] shadow-sm ">
+
+        <div class="navbar bg-base-100 shadow-sm justify-between items-center">
+            <div class="flex items-center">
+                <img src="assets/github-logo.png" alt="">
+                <a class="btn btn-ghost text-xl">GitHub Issues Tracker</a>
+            </div>
+            <div class="flex items-center gap-2">
+                <div>
+                    <input type="text" placeholder="Search issues..." class="input input-bordered w-24 md:w-auto" />
+                </div>
+                <button class=" btn btn-primary">New Issue</button>
+            </div>
+
+        </div>
+    </nav>
+
 
 </body>
 
