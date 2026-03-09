@@ -20,8 +20,58 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <p>Hello world</p>
+<body class="bg-base-200">
+    <section class="hero min-h-screen">
+        <!-- min-h-screen = section ta k center kore -->
+
+        <div class="hero-content">
+            <!-- hero-content = section ar vitorer content ke center kore -->
+
+            <div class="card  w-full max-w-sm shadow-xl">
+                <div class="card-body">
+                    <!-- logo-title part -->
+                    <div class="text-center mb-2">
+                        <img class="mx-auto" src="assets/github-logo.png" alt="">
+                        <h1 class="font-bold text-2xl text-[#1F2937] mt-5">GitHub Issues Tracker</h1>
+                        <p class="text-[#64748B]">Sign in to manage your issues</p>
+
+                    </div>
+
+                    <!-- form -->
+                    <fieldset>
+                        <label class="label font-bold">Username</label>
+                        <input type="email" id="username" class="input" placeholder=" Enter Username" />
+                        <p class="text-sm text-[#4A00FF]">Default: admin</p>
+
+                        <label class="label font-bold mt-3">Password</label>
+                        <input type="password" id="password" class="input" placeholder="Enter Password" />
+                        <p class="text-sm text-[#4A00FF]">Default: admin123</p>
+
+                        <a id="login-btn" class="btn btn-primary w-full mt-4" target="_blank"
+                            href="second-page.html">Sign
+                            In </a>
+                        <p id="error-msg" class="text-red-500 mt-2 hidden">Invalid Username or Password</p>
+                    </fieldset>
+
+
+
+                    <!-- or-divider -->
+
+                    <div class="divider">
+                        OR
+                    </div>
+
+                    <!-- <footer> -->
+                    <div class="mx-auto">
+                        <p class="text-[#64748B] mb-5">Demo Credentials:</p>
+                        <div>
+                            <p><span class="font-bold">Username:</span> <span class="text-[#64748B]">admin</span></p>
+
+                            <p><span class="font-bold">Password:</span><span class="text-[#64748B]">admin123</span></p>
+                        </div>
+                    </div>
+    </section>
+
 
 </body>
 
